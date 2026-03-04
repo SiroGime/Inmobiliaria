@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
-import lombok.Data;
 
 @Entity
 public class Usuario {
@@ -23,6 +22,10 @@ public class Usuario {
 
     @NotBlank
     private String password;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private Rol rol = Rol.AGENTE;
 
     public Usuario(){};
 
@@ -62,5 +65,13 @@ public class Usuario {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Rol getRol() { 
+        return rol; 
+    }
+
+    public void setRol(Rol rol) { 
+        this.rol = rol; 
     }
 }
