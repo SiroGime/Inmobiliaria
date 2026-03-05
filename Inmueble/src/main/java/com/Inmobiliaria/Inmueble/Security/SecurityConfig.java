@@ -25,11 +25,13 @@ public class SecurityConfig {
             .authorizeHttpRequests(auth -> auth
                 // públicos (catálogo)
                 .requestMatchers(HttpMethod.GET, "/casa/**", "/departamento/**", "/local/**", "/ph/**", "/terreno/**", "/inmueble/**").permitAll()
+                .requestMatchers(HttpMethod.POST, "/api/v1/leads").permitAll()
 
                 // privados (panel inmobiliario)
                 .requestMatchers(HttpMethod.POST, "/casa/**", "/departamento/**", "/local/**", "/ph/**", "/terreno/**").hasAnyRole("ADMIN", "AGENTE")
                 .requestMatchers(HttpMethod.PUT, "/**").hasAnyRole("ADMIN", "AGENTE")
                 .requestMatchers(HttpMethod.DELETE, "/**").hasAnyRole("ADMIN", "AGENTE")
+                .requestMatchers("/api/v1/admin/**").hasAnyRole("ADMIN", "AGENTE")
 
                 .anyRequest().authenticated()
             )
