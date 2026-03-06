@@ -5,6 +5,7 @@ com\Inmobiliaria\Inmueble\Models\Casa.class
 com\Inmobiliaria\Inmueble\Models\Local.class
 com\Inmobiliaria\Inmueble\Controllers\DepartamentoController.class
 com\Inmobiliaria\Inmueble\Repositories\ILocalRepository.class
+com\Inmobiliaria\Inmueble\Config\DotenvConfig.class
 com\Inmobiliaria\Inmueble\Repositories\IDepartamentoRepository.class
 com\Inmobiliaria\Inmueble\Services\CasaService.class
 com\Inmobiliaria\Inmueble\Controllers\PHController.class
@@ -37,4 +38,5 @@ com\Inmobiliaria\Inmueble\DTOs\LocalDTO.class
 com\Inmobiliaria\Inmueble\DTOs\TerrenoDTO.class
 com\Inmobiliaria\Inmueble\Models\PH.class
 com\Inmobiliaria\Inmueble\Services\DepartamentoService.class
+com\Inmobiliaria\Inmueble\Services\LeadCreatedEvent.class
 com\Inmobiliaria\Inmueble\Repositories\ICasaRepository.class

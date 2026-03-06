@@ -1,1 +1,3 @@
 com\Inmobiliaria\Inmueble\InmuebleApplicationTests.class
+com\Inmobiliaria\Inmueble\Services\LeadServiceTest.class
+com\Inmobiliaria\Inmueble\Controllers\LeadControllerSecurityTest.class

@@ -4,6 +4,7 @@ import com.Inmobiliaria.Inmueble.DTOs.LeadRequestDTO;
 import com.Inmobiliaria.Inmueble.DTOs.LeadResponseDTO;
 import com.Inmobiliaria.Inmueble.Models.Lead;
 import com.Inmobiliaria.Inmueble.Repositories.ILeadRepository;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,12 +14,12 @@ import java.util.stream.Collectors;
 public class LeadService {
 
     private final ILeadRepository leadRepository;
-    private final EmailNotificationService emailNotificationService;
+    private final ApplicationEventPublisher eventPublisher;
 
     public LeadService(ILeadRepository leadRepository,
-                       EmailNotificationService emailNotificationService) {
+                       ApplicationEventPublisher eventPublisher) {
         this.leadRepository = leadRepository;
-        this.emailNotificationService = emailNotificationService;
+        this.eventPublisher = eventPublisher;
     }
 
     public LeadResponseDTO crearLead(LeadRequestDTO req) {
@@ -31,7 +32,7 @@ public class LeadService {
         lead.setEstado("NUEVO");
 
         Lead guardado = leadRepository.save(lead);
-        emailNotificationService.notifyNewLead(guardado);
+        eventPublisher.publishEvent(new LeadCreatedEvent(guardado));
 
         return toDTO(guardado);
     }

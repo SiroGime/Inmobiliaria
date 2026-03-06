@@ -3,6 +3,7 @@ com\Inmobiliaria\Usuarios\Auth\DTOs\AuthResponse.class
 com\Inmobiliaria\Usuarios\Auth\AuthService.class
 com\Inmobiliaria\Usuarios\Models\Usuario.class
 com\Inmobiliaria\Usuarios\Auth\JwtService.class
+com\Inmobiliaria\Usuarios\Config\DotenvConfig.class
 com\Inmobiliaria\Usuarios\Services\UsuarioService.class
 com\Inmobiliaria\Usuarios\Security\SecurityConfig.class
 com\Inmobiliaria\Usuarios\Config\AdminSeeder.class
