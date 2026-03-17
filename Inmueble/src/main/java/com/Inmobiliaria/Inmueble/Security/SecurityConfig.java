@@ -26,11 +26,14 @@ public class SecurityConfig {
                 // públicos (catálogo)
                 .requestMatchers(HttpMethod.GET, "/casa/**", "/departamento/**", "/local/**", "/ph/**", "/terreno/**", "/inmueble/**").permitAll()
                 .requestMatchers(HttpMethod.POST, "/api/v1/leads").permitAll()
+                .requestMatchers(HttpMethod.GET, "/api/v1/inmuebles/*/*/fotos").permitAll()
 
                 // privados (panel inmobiliario)
                 .requestMatchers(HttpMethod.POST, "/casa/**", "/departamento/**", "/local/**", "/ph/**", "/terreno/**").hasAnyRole("ADMIN", "AGENTE")
                 .requestMatchers(HttpMethod.PUT, "/**").hasAnyRole("ADMIN", "AGENTE")
                 .requestMatchers(HttpMethod.DELETE, "/**").hasAnyRole("ADMIN", "AGENTE")
+                .requestMatchers(HttpMethod.POST, "/api/v1/admin/inmuebles/*/*/fotos").hasAnyRole("ADMIN", "AGENTE")
+                .requestMatchers(HttpMethod.DELETE, "/api/v1/admin/inmuebles/*/*/fotos/**").hasAnyRole("ADMIN", "AGENTE")
                 .requestMatchers("/api/v1/admin/**").hasAnyRole("ADMIN", "AGENTE")
 
                 .anyRequest().authenticated()

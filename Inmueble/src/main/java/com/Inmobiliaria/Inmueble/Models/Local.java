@@ -1,14 +1,12 @@
 package com.Inmobiliaria.Inmueble.Models;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
 @Entity
-public class Local{
+@Table(name = "locales")
+public class Local {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -27,7 +25,8 @@ public class Local{
     private Long tamanioLote;
     private boolean tieneDeposito;
 
-    public Local(){};
+    public Local() {}
+
     public Local(String direccion, Double precio, boolean disponible, LocalDate fechaPublicacion, Operacion operacion, Integer banios, Integer garage, Long area, Long tamanioLote, boolean tieneDeposito) {
         this.direccion = direccion;
         this.precio = precio;
@@ -41,91 +40,36 @@ public class Local{
         this.tieneDeposito = tieneDeposito;
     }
 
-    public Integer getId() {
-        return id;
-    }
+    public Integer getId() { return id; }
+    public void setId(Integer id) { this.id = id; }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
+    public String getDireccion() { return direccion; }
+    public void setDireccion(String direccion) { this.direccion = direccion; }
 
-    public String getDireccion() {
-        return direccion;
-    }
+    public Double getPrecio() { return precio; }
+    public void setPrecio(Double precio) { this.precio = precio; }
 
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
+    public boolean isDisponible() { return disponible; }
+    public void setDisponible(boolean disponible) { this.disponible = disponible; }
 
-    public Double getPrecio() {
-        return precio;
-    }
+    public LocalDate getFechaPublicacion() { return fechaPublicacion; }
+    public void setFechaPublicacion(LocalDate fechaPublicacion) { this.fechaPublicacion = fechaPublicacion; }
 
-    public void setPrecio(Double precio) {
-        this.precio = precio;
-    }
+    public Operacion getOperacion() { return operacion; }
+    public void setOperacion(Operacion operacion) { this.operacion = operacion; }
 
-    public boolean isDisponible() {
-        return disponible;
-    }
+    public Integer getBanios() { return banios; }
+    public void setBanios(Integer banios) { this.banios = banios; }
 
-    public void setDisponible(boolean disponible) {
-        this.disponible = disponible;
-    }
+    public Integer getGarage() { return garage; }
+    public void setGarage(Integer garage) { this.garage = garage; }
 
-    public LocalDate getFechaPublicacion() {
-        return fechaPublicacion;
-    }
+    public Long getArea() { return area; }
+    public void setArea(Long area) { this.area = area; }
 
-    public void setFechaPublicacion(LocalDate fechaPublicacion) {
-        this.fechaPublicacion = fechaPublicacion;
-    }
+    public Long getTamanioLote() { return tamanioLote; }
+    public void setTamanioLote(Long tamanioLote) { this.tamanioLote = tamanioLote; }
 
-    public Operacion getOperacion() {
-        return operacion;
-    }
-
-    public void setOperacion(Operacion operacion) {
-        this.operacion = operacion;
-    }
-
-    public Integer getBanios() {
-        return banios;
-    }
-
-    public void setBanios(Integer banios) {
-        this.banios = banios;
-    }
-
-    public Integer getGarage() {
-        return garage;
-    }
-
-    public void setGarage(Integer garage) {
-        this.garage = garage;
-    }
-
-    public Long getArea() {
-        return area;
-    }
-
-    public void setArea(Long area) {
-        this.area = area;
-    }
-
-    public Long getTamanioLote() {
-        return tamanioLote;
-    }
-
-    public void setTamanioLote(Long tamanioLote) {
-        this.tamanioLote = tamanioLote;
-    }
-
-    public boolean isTieneDeposito() {
-        return tieneDeposito;
-    }
-
-    public void setTieneDeposito(boolean tieneDeposito) {
-        this.tieneDeposito = tieneDeposito;
-    }
+    public boolean isTieneDeposito() { return tieneDeposito; }
+    public void setTieneDeposito(boolean tieneDeposito) { this.tieneDeposito = tieneDeposito; }
 }

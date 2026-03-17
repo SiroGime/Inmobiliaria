@@ -1,7 +1,9 @@
+C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Config\CloudinaryConfig.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Config\DotenvConfig.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Controllers\CasaController.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Controllers\DepartamentoController.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Controllers\InmuebleController.java
+C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Controllers\InmuebleFotoController.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Controllers\LeadController.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Controllers\LocalController.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Controllers\PHController.java
@@ -9,6 +11,7 @@ C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\co
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\DTOs\CasaDTO.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\DTOs\DepartamentoDTO.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\DTOs\InmuebleDTO.java
+C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\DTOs\InmuebleFotoResponseDTO.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\DTOs\LeadRequestDTO.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\DTOs\LeadResponseDTO.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\DTOs\LocalDTO.java
@@ -18,6 +21,7 @@ C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\co
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Models\Casa.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Models\Departamento.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Models\Inmueble.java
+C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Models\InmuebleFoto.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Models\Lead.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Models\Local.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Models\Operacion.java
@@ -25,6 +29,7 @@ C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\co
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Models\Terreno.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Repositories\ICasaRepository.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Repositories\IDepartamentoRepository.java
+C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Repositories\IInmuebleFotoRepository.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Repositories\IInmuebleRepository.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Repositories\ILeadRepository.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Repositories\ILocalRepository.java
@@ -34,8 +39,10 @@ C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\co
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Security\JwtService.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Security\SecurityConfig.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Services\CasaService.java
+C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Services\CloudinaryStorageService.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Services\DepartamentoService.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Services\EmailNotificationService.java
+C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Services\InmuebleFotoService.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Services\InmuebleService.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Services\LeadCreatedEvent.java
 C:\Users\Usuario\OneDrive\Escritorio\inmo\Inmobiliaria\Inmueble\src\main\java\com\Inmobiliaria\Inmueble\Services\LeadService.java
